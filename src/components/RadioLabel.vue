@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style >
 .app {
   margin: auto;
   width: 15vw;
@@ -44,9 +44,7 @@ export default {
   background-color: #f1ecc3;
 }
 .radio {
-  margin: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 </style>
