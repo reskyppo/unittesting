@@ -1,19 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to a Your Vue.js App"/>
-  </div>
+  <div id="app"><RadioLabel :labels="labelItem" /></div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import RadioLabel from "./components/RadioLabel.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    RadioLabel,
+  },
+  data() {
+    return {
+      labelItem: [
+        { name: "Radio A" },
+        { name: "Radio B" },
+        { name: "Radio C" },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
