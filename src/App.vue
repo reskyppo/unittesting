@@ -1,13 +1,18 @@
 <template>
-  <div id="app"><RadioLabel :labels="labelItem" /></div>
+  <div id="app">
+    <RadioLabel :labels="labelItem" />
+    <RadioSub />
+  </div>
 </template>
 
 <script>
 import RadioLabel from "./components/RadioLabel.vue";
+import RadioSub from "./components/RadioSub.vue";
 export default {
   name: "App",
   components: {
     RadioLabel,
+    RadioSub,
   },
   data() {
     return {
@@ -23,11 +28,8 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: auto;
+  width: 15vw;
+  padding: 2.5rem;
 }
 </style>
