@@ -5,7 +5,7 @@
     </h3>
     <div class="radio">
       <!-- subcomponent input text -->
-      <span class="radio-items">
+      <span class="radiado-items">
         <input
           type="radio"
           required
