@@ -14,7 +14,7 @@
           :value="message"
         />
         <label for="inputText">
-          <input v-model="message" placeholder="Hey!" />
+          <input type="text" v-model="message" placeholder="Hey!" />
         </label>
       </span>
 
